@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+}
+
+#logo {
+    width: 60px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+#r-cont-item {
+    padding: 20px 0px;
+    display: flex;
+    gap: 25px;
+    margin-right: 60px;
+}
+
+/* section 1 */
+
+.main-content {
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 18px #513b3b;
+    gap: 20px;
+}
+
+.main-content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/img/img1.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    z-index: -1;
+    filter: brightness(0.5);
+}
+
+.main-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.main-content button {
+    outline: none;
+    border: navajowhite;
+    padding: 8px 17px;
+    cursor: pointer;
+    background: red;
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+    border: 2px solid red;
+    transition: all .5s;
+}
+
+.main-content button:hover {
+    background-color: transparent;
+}
+
+/* section 2 */
+
+.courses {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course-card {
+    max-width: 300px;
+    margin: 30px;
+    border: 2px solid red;
+    border-radius: 10px;
+    transition: all 0.8s;
+    cursor: pointer;
+    min-width: 275px;
+}
+
+.course-card:hover {
+    background-color: red;
+    color: white;
+}
+
+.course-card .content {
+    padding: 30px;
+}
+
+.course-card .content h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.c-head {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    padding-top: 24px;
+}
+
+/* section 3 : placement */
+
+.campus_selection {
+    background-color: rgb(64, 62, 62);
+    color: white;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+
+.cap-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10vh;
+    column-gap: 30vh;
+}
+
+.place-card {
+    max-width: 400px;
+    min-width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* footer */
+.foot {
+    background-color: black;
+    color: white;
+    display: grid;
+    place-items: center;
+    padding: 30px 0px;
+}
