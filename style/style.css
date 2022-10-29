@@ -45,10 +45,15 @@ body {
     color: wheat;
     margin-right: 34px;
     font-size: 27px;
-    cursor: pointer;
     display: none;
     margin-top: 10px;
 }
+
+.ham-burger p i {
+    cursor: pointer;
+}
+
+
 
 /* section 1 */
 
