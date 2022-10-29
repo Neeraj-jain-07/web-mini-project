@@ -1,0 +1,19 @@
+@media (max-width:778px) {}
+
+@media (max-width:610px) {
+    .ham-burger {
+        display: block;
+    }
+
+    #r-cont-item {
+        display: none;
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    li {
+        margin-bottom: 8px;
+    }
+
+
+}
