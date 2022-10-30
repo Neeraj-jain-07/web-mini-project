@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTIRT</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/utilities.css">
+    <link rel="stylesheet" href="../style/responsive.css">
+    <link rel="stylesheet" href="../style/registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- This is header -->
+    <header>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="../img/btirtlogo.png" alt="">
+            </div>
+
+
+            <div class="r-content">
+                <ul id="r-cont-item">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Registration</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+
+            </div>
+            <div class="ham-burger">
+                <p>
+                    <i class="fa-solid fa-bars" onclick="tog()"></i>
+                </p>
+            </div>
+        </nav>
+    </header>
+
+    <!-- This is Registration Form -->
+    <section>
+        <div class="m-w">
+            <div class="registration">
+                <div class="main-container">
+                    <h1>Registration Form</h1>
+                    <div class="form-container">
+                        <form action="">
+                            <div class="input-field">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" placeholder="First Name" class="name name-f"><span>
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" placeholder="Last Name" class="name">
+                                </span>
+                            </div>
+
+                            <div class="input-field">
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                                <input type="email" placeholder="Email" class="text-name">
+                            </div>
+
+                            <div class="input-field">
+                                <i class="fa-sharp fa-solid fa-lock"></i>
+                                <input type="password" placeholder="Password" class="text-name">
+                            </div>
+
+                            <div class="input-field">
+                                <i class="fa-sharp fa-solid fa-lock"></i>
+                                <input type="password" placeholder="Conform Password" class="text-name">
+                            </div>
+
+                            <div class="input-field">
+                                <input type="radio" name="sex" id="male-sex" class="radio">
+                                <label for="male-sex" class="label-radio">Male</label>
+
+                                <input type="radio" name="sex" id="female-sex" class="radio">
+                                <label for="female-sex">Female</label>
+                            </div>
+
+                            <div class="input-field">
+                                <select class="country">
+                                    <option>Select your country</option>
+                                    <option>Afganistan</option>
+                                    <option>America</option>
+                                    <option>Australia</option>
+                                    <option>Brazil</option>
+                                    <option>Bhutan</option>
+                                    <option>Bangladesh</option>
+                                    <option>China</option>
+                                    <option>India</option>
+                                    <option>Russia</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+                                <input type="checkbox" name="" id="term-condition" class="checkbox">
+                                <label for="term-condition">I accept all term and condition</label>
+                            </div>
+
+                            <div class="input-field">
+                                <input type="reset" value="Reset data" class="reset-btn">
+                                <input type="submit" value="Register" class="sub-btn">
+                            </div>
+
+
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- This is footer -->
+    <footer class="foot">
+        <p>All Right is reserved || 2022 &copy;</p>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

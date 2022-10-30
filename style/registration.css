@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    /* background-color: yellow;     */
+    width: 60%;
+    margin: 30px auto;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    border-top: 5px solid blue;
+}
+
+.main-container h1 {
+    font-family: 'Arimo', sans-serif;
+    word-spacing: 1px;
+    letter-spacing: 3px;
+    text-align: center;
+
+}
+
+.form-container {
+    /* background-color: pink; */
+    margin: 0px auto;
+    width: 80%;
+
+}
+
+.input-field {
+    width: 80%;
+    margin: 30px auto;
+    /* background-color: red; */
+    position: relative;
+}
+
+.input-field .name,
+.input-field .text-name {
+    padding: 7px 0px 7px 40px;
+    outline: none;
+    border: 1px solid rgb(213, 212, 212);
+}
+
+.name:hover,
+.input-field .text-name:hover {
+    background-color: #f8f5f5;
+    border: 1px solid rgb(213, 212, 212);
+}
+
+.input-field .name:focus,
+.input-field .text-name:focus {
+    border: 1.5px solid blue;
+}
+
+
+.input-field .name {
+    width: 46%;
+}
+
+.input-field .text-name {
+    width: 100%;
+}
+
+.input-field span {
+    margin-left: 6%;
+}
+
+.input-field i {
+    position: absolute;
+    border-right: 1px solid #ccc;
+    padding: 7.5px 9px;
+}
+
+.radio {
+    margin-right: 3px;
+}
+
+.label-radio {
+    margin-right: 4vw;
+}
+
+.country {
+    width: 100%;
+    padding: 5px;
+    border: 0px;
+}
+
+.sub-btn {
+    width: 48%;
+    border: 0px;
+    padding: 4px;
+    background-color: blue;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.reset-btn {
+    width: 48%;
+    border: 0px;
+    padding: 4px;
+    background-color: red;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.sub-btn:hover {
+    background-color: rgb(83, 83, 226);
+}
+
+.reset-btn:hover {
+    background-color: rgb(238, 53, 53);
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+
+/* Use media query */
+@media (max-width:900px) {
+
+    .input-field .name {
+        width: 100%;
+    }
+
+    .input-field .name-f {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .input-field span {
+        margin: 0px;
+    }
+}
+
+@media (max-width:670px) {
+    .reset-btn {
+        width: 100%;
+        margin-bottom: 11px;
+    }
+
+    .sub-btn {
+        width: 100%;
+    }
+
+    .main-container {
+        width: 80%;
+    }
+
+    .form-container {
+        width: 95%;
+    }
+}
+
+@media (max-width:450px) {
+    .main-container {
+        width: 90%;
+    }
+
+    .form-container {
+        width: 99%;
+    }
+}
