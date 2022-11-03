@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTIRT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/utilities.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .form_of_fees {
+            margin: 60px auto;
+            width: 40%;
+            border: 2px solid black;
+            padding: 30px;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        }
+
+        .form-control {
+            width: 50% !important;
+            outline: none;
+        }
+
+        label {
+            font-size: 17px;
+        }
+
+        .input-field label {
+            display: block;
+        }
+
+        .input-field select {
+            display: block;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #fff;
+            border: 1px solid #ced4da;
+        }
+
+        .input-field:focus {
+            border: 2px solid black;
+        }
+
+        input:focus {
+            border: 2px solid black;
+        }
+
+        .tag {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            text-align: center;
+            padding: 7px 0px;
+            background-color: black;
+            color: white;
+            letter-spacing: 3px;
+            font-size: 20px;
+        }
+
+        @media (max-width:1000px) {
+            .form_of_fees {
+                width: 55% !important;
+            }
+        }
+
+        @media (max-width:650px) {
+            .form_of_fees {
+                width: 70% !important;
+            }
+        }
+
+        @media (max-width:450px) {
+            .form_of_fees {
+                width: 85% !important;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <!-- this is header -->
+    <header>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="../img/btirtlogo.png" alt="">
+            </div>
+
+
+            <div class="r-content">
+                <ul id="r-cont-item">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Faculty</a></li>
+                    <li><a href="../Html/registration.html">Registration</a></li>
+                    <li><a href="#">Fees</a></li>
+                </ul>
+            </div>
+            <div class="ham-burger">
+                <p>
+                    <i class="fa-solid fa-bars" onclick="tog()"></i>
+                </p>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="container">
+
+
+        <form class="form_of_fees">
+            <div class="tag">
+                Fill Your Fees
+            </div>
+
+            <div class="mb-3" style="margin-top:35px">
+                <label for="exampleInputText" class="form-label"><strong> Enter Roll Number</strong></label>
+                <input type="text" class="form-control" id="exampleInputText" aria-describedby="emailHelp">
+            </div>
+
+
+            <div class="input-field mb-3">
+                <label for="exampleInputText" class="form-label"><strong>Select Your Branch</strong></label>
+                <select class="country">
+                    <option>Select your Branch</option>
+                    <option>Computer Science</option>
+                    <option>Civil</option>
+                    <option>Ec</option>
+                    <option>Ex</option>
+                    <option>Mechnical</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"><strong>Password</strong></label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Accept term & condition</label>
+            </div>
+            <button type="submit" class="btn btn-primary">See Fees</button>
+        </form>
+
+
+    </div>
+    <!--  -->
+    <!-- This is a footer -->
+    <footer class="foot">
+        <p>All Right is reserved || 2022 &copy;</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

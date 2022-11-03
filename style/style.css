@@ -6,17 +6,44 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    scroll-behavior: smooth;
 }
 
 header {
     position: sticky;
     top: 0px;
     z-index: 100;
+}
+
+.chat {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+    background-color: red;
+    bottom: 20px;
+    right: 20px;
+    line-height: 55px;
+    text-align: center;
+    border: 2px solid gray;
+    box-shadow: 0px 0px 4px #484a4b;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.chat:hover {
+    background-color: #976e6e;
 }
 
 #navbar {
@@ -32,6 +59,7 @@ header {
     height: 40px;
     margin-left: 30px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .r-content {
@@ -44,6 +72,19 @@ header {
     display: flex;
     gap: 25px;
     margin-right: 60px;
+    margin-bottom: 0px !important;
+}
+
+#r-cont-item li a {
+    transition: all 0.2s;
+    padding: 0px 0px 6px 0px;
+}
+
+
+#r-cont-item li a:hover {
+    border-bottom: 2.5px solid white;
+
+
 }
 
 /* This is for ham-burger */
@@ -88,6 +129,37 @@ header {
     background-position: center;
     z-index: -1;
     filter: brightness(0.5);
+    /* animation: scroll 8s linear infinite; */
+}
+
+@keyframes scroll {
+    0% {
+        background: url('/img/img1.jpg');
+    }
+
+    /* 22% {
+        background: url('/img/img1.jpg');
+    } */
+
+    33% {
+        background: url('/img/img2.jpg');
+    }
+
+    /* 54% {
+        background: url('/img/img2.jpg');
+    } */
+
+    66% {
+        background: url('/img/img3.jpg');
+    }
+
+    /* 85% {
+        background: url('/img/img3.jpg');
+    } */
+
+    100% {
+        background: url('/img/img1.jpg');
+    }
 }
 
 .main-content h1 {
@@ -114,9 +186,14 @@ header {
 
 /* section 2 */
 
+#courses {
+    padding-top: 50px;
+}
+
 .courses {
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #fefefe;
 }
 
 .course-card {
@@ -136,6 +213,10 @@ header {
 
 .course-card .content {
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .course-card .content h3 {
