@@ -12,6 +12,7 @@ a {
     color: white !important;
     font-weight: 600 !important;
     font-size: 19px !important;
+    width: auto;
 }
 
 img {

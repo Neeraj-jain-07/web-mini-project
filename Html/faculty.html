@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTIRT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/utilities.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .cardhai {
+            width: 300px;
+            /* box-shadow: 0px 0px 7px black; */
+            padding: 20px 30px 20px 30px;
+        }
+
+        .cardhai .content {
+            padding-top: 10px;
+        }
+
+        .cs-faculty .h3-top {
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        .cs-faculty {
+            margin-bottom: 45px;
+        }
+
+        .cards {
+            display: flex;
+            column-gap: 50px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 39px;
+            row-gap: 40px;
+
+        }
+
+        @media (max-width:786px) {
+            .cards {
+                justify-content: center;
+            }
+
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+    <!-- this is header -->
+    <header>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="../img/btirtlogo.png" alt="">
+            </div>
+
+
+            <div class="r-content">
+                <ul id="r-cont-item">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">Fees</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a class="active" href="#">Faculty</a></li>
+                </ul>
+            </div>
+            <div class="ham-burger">
+                <p>
+                    <i class="fa-solid fa-bars" onclick="tog()"></i>
+                </p>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="container">
+        <div class="faculty">
+
+
+            <!-- Cse faculty -->
+            <div class="cs-faculty">
+                <h3 class="h3-top">CSE Faculty</h3>
+                <hr>
+                <div class="cards">
+                    <!-- Hod anamika man -->
+                    <div class="cardhai">
+                        <!-- <div class="img">
+                            <img src="../img/img1.jpg" alt="">
+                        </div> -->
+                        <div class="content">
+                            <h3>HOD - Anamika Piyashi Mam</h3>
+                            <hr>
+                            <p>Managing CSE department</p>
+                            <h5>Subjects:</h5>
+                            <p>
+                                Networking,Opps
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- pranjal sir -->
+                    <div class="cardhai">
+                        <!-- <div class="img">
+                            <img src="../img/img1.jpg" alt="">
+                        </div> -->
+                        <div class="content">
+                            <h3>Pranjal Khare Sir</h3>
+                            <hr>
+                            <h5>Subjects:</h5>
+                            <p>
+                                Enternet and Web technology , Computer organisatoin & Architecture
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- nilesh sir -->
+                    <div class="cardhai">
+                        <!-- <div class="img">
+                            <img src="../img/img1.jpg" alt="">
+                        </div> -->
+                        <div class="content">
+                            <h3>Nilesh Sen Sir</h3>
+                            <hr>
+                            <h5>Subjects:</h5>
+                            <p>
+                                Software Engineering , Operating System
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ex faculty -->
+            <div class="cs-faculty">
+                <h3 class="h3-top">EX Faculty</h3>
+                <hr>
+                <div class="cards">
+
+                    <!-- Hod EX man -->
+                    <div class="cardhai">
+                        <!-- <div class="img">
+                            <img src="../img/img1.jpg" alt="">
+                        </div> -->
+                        <div class="content">
+                            <h3>HOD - Megha Soni Mam</h3>
+                            <hr>
+                            <p>Managing EX department</p>
+                            <h5>Subjects:</h5>
+                            <p>
+                                subject1,subject2
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- pranjal sir -->
+                    <div class="cardhai">
+                        <!-- <div class="img">
+                            <img src="../img/img for web 2/pranjal.jpg" alt="">
+                        </div> -->
+                        <!-- Naveen Khare sir -->
+                        <div class="content">
+                            <h3>Naveen Khare Sir</h3>
+                            <hr>
+                            <h5>Subject:</h5>
+                            <p>
+                                Renewable Energy
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="cardhai">
+                        <!-- <div class="img">
+                            <img style="height:300px ;" src="../img/img for web 2/nilesh-sen1_edited.jpg" alt="">
+                        </div> -->
+                        <!-- Aayushi Pateriya -->
+                        <div class="content">
+                            <h3>Ayashi Pateriya</h3>
+                            <hr>
+                            <h5>Subject:</h5>
+                            <p>
+                                Pwer Electronics
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+            <!-- Civil faculty -->
+            <div class="cs-faculty">
+                <h3 class="h3-top">Civil Faculty</h3>
+                <hr>
+                <div class="cards">
+
+                    <!-- Hod Civil man -->
+                    <div class="cardhai">
+                        <!-- <div class="img">
+                            <img src="../img/img1.jpg" alt="">
+                        </div> -->
+                        <!-- Ravindra Raj sir -->
+                        <div class="content">
+                            <h3>HOD - Ravindra Raj Sir</h3>
+                            <hr>
+                            <p>Managing Civil department</p>
+                            <h5>Subjects:</h5>
+                            <p>
+                                subject1,subject2
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Kashi Prasad Patel -->
+                    <div class="cardhai">
+                        <!-- <div class="img">
+                            <img src="../img/img for web 2/pranjal.jpg" alt="">
+                        </div> -->
+                        <!-- Naveen Khare sir -->
+                        <div class="content">
+                            <h3>Kashi Prasad Patel</h3>
+                            <hr>
+                            <h5>Subject:</h5>
+                            <p>
+                                Transportation II
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="cardhai">
+                        <!-- <div class="img">
+                            <img style="height:300px ;" src="../img/img for web 2/nilesh-sen1_edited.jpg" alt="">
+                        </div> -->
+                        <!-- Purnima Athiya -->
+                        <div class="content">
+                            <h3>Purnima Athiyaa</h3>
+                            <hr>
+                            <h5>Subject:</h5>
+                            <p>
+                                Remote Sensing
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+            <!-- Mechanical faculty -->
+            <div class="cs-faculty">
+                <h3 class="h3-top">Mechanical Faculty</h3>
+                <hr>
+                <div class="cards">
+
+                    <!-- Hod Mechanical -->
+                    <div class="cardhai">
+                        <!-- <div class="img">
+                            <img src="../img/img1.jpg" alt="">
+                        </div> -->
+                        <!-- Satya N Patel -->
+                        <div class="content">
+                            <h3>HOD - Satya N Patel</h3>
+                            <hr>
+                            <p>Managing Mechanical department</p>
+                            <h5>Subject:</h5>
+                            <p>
+                                Mech Vib & Noise Engineering
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Gaurav Khare -->
+                    <div class="cardhai">
+                        <!-- <div class="img">
+                            <img src="../img/img for web 2/pranjal.jpg" alt="">
+                        </div> -->
+                        <!-- Gaurav Khare -->
+                        <div class="content">
+                            <h3>Gaurav Khare</h3>
+                            <hr>
+                            <h5>Subject:</h5>
+                            <p>
+                                I C Engines
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Prem Kushwaha -->
+                    <div class="cardhai">
+                        <!-- <div class="img">
+                            <img style="height:300px ;" src="../img/img for web 2/nilesh-sen1_edited.jpg" alt="">
+                        </div> -->
+
+                        <div class="content">
+                            <h3>Prem Kushwaha</h3>
+                            <hr>
+                            <h5>Subject:</h5>
+                            <p>
+                                Dynamics of Machines
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!--  -->
+    <!-- This is a footer -->
+    <footer class="foot">
+        <p>All Right is reserved || 2022 &copy;</p>
+        <hr>
+        <h4>Follow Us</h4>
+        <div class="icons">
+            <a href="https://twitter.com/btirt?lang=en"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://in.linkedin.com/in/btirt-me-b30ab0a4"> <i class="fa-brands fa-linkedin"></i></a>
+
+            <a href="https://www.facebook.com/BT.btirtsagar/"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

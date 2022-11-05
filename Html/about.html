@@ -107,9 +107,18 @@
             <div class="r-content">
                 <ul id="r-cont-item">
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="#">Faculty</a></li>
+                    <li><a class="active" href="#">Fees</a></li>
                     <li><a href="../Html/registration.html">Registration</a></li>
-                    <li><a href="#">Fees</a></li>
+                    <div class="dropDown">
+                        <a id="dropdown" href="faculty.html">Faculty</a>
+                        <div class="drow_menu">
+                            <li><a class="dDT" href="faculty.html">CSE Faculty</a></li>
+                            <li><a class="dDT" href="faculty.html">EX Faculty</a></li>
+                            <li><a class="dDT" href="faculty.html">Civil Faculty</a></li>
+                            <li><a class="dDT" href="faculty.html">Machanical Faculty</a></li>
+
+                        </div>
+                    </div>
                 </ul>
             </div>
             <div class="ham-burger">
@@ -131,15 +140,16 @@
             </div>
 
             <div class="mb-3" style="margin-top:35px">
-                <label for="exampleInputText" class="form-label"><strong> Enter Roll Number</strong></label>
-                <input type="text" class="form-control" id="exampleInputText" aria-describedby="emailHelp">
+                <label for="exampleInputText" class="form-label"><strong>Roll Number</strong></label>
+                <input type="text" class="form-control" id="exampleInputText" aria-describedby="emailHelp"
+                    placeholder="Enter here ...">
             </div>
 
 
             <div class="input-field mb-3">
-                <label for="exampleInputText" class="form-label"><strong>Select Your Branch</strong></label>
+                <label for="exampleInputText" class="form-label"><strong>Select Branch</strong></label>
                 <select class="country">
-                    <option>Select your Branch</option>
+                    <option>Select Branch</option>
                     <option>Computer Science</option>
                     <option>Civil</option>
                     <option>Ec</option>
@@ -147,9 +157,22 @@
                     <option>Mechnical</option>
                 </select>
             </div>
+
+            <div class="input-field mb-3">
+                <label for="exampleInputText" class="form-label"><strong>Select Year</strong></label>
+                <select class="country">
+                    <option>Select Year</option>
+                    <option>1st Year</option>
+                    <option>2nd Year</option>
+                    <option>3rd Year</option>
+                    <option>4th Year</option>
+                </select>
+            </div>
+
+
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label"><strong>Password</strong></label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
             </div>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -164,6 +187,14 @@
     <!-- This is a footer -->
     <footer class="foot">
         <p>All Right is reserved || 2022 &copy;</p>
+        <hr>
+        <h4>Follow Us</h4>
+        <div class="icons">
+            <a href="https://twitter.com/btirt?lang=en"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://in.linkedin.com/in/btirt-me-b30ab0a4"> <i class="fa-brands fa-linkedin"></i></a>
+
+            <a href="https://www.facebook.com/BT.btirtsagar/"><i class="fa-brands fa-facebook"></i></a>
+        </div>
     </footer>
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

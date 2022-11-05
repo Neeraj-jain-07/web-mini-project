@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -22,6 +24,57 @@ header {
     position: sticky;
     top: 0px;
     z-index: 100;
+}
+
+/* for dropdown ke liye */
+.dropDown {
+    position: relative;
+    padding: 0px 5px 6px 5px;
+    border-bottom: 2.5px solid red;
+    transition: all 0.2s;
+}
+
+
+.dropDown:hover {
+    border-bottom-color: white;
+}
+
+.dropDown:hover .drow_menu {
+    display: block;
+
+}
+
+
+.drow_menu {
+    position: absolute;
+    top: 37px;
+    left: -14px;
+    width: 120px;
+    background-color: orange;
+    display: none;
+    padding-top: 21px;
+    /* z-index: -1; */
+
+}
+
+.dDT {
+    font-size: 15px !important;
+}
+
+
+.drow_menu li {
+    padding: 4px 14px;
+}
+
+.drow_menu li a {
+    padding: 0px !important;
+}
+
+@media (max-width:610px) {
+    .dropDown:hover .drow_menu {
+        display: none;
+    }
+
 }
 
 .chat {
@@ -70,21 +123,20 @@ header {
 #r-cont-item {
     padding: 20px 0px;
     display: flex;
-    gap: 25px;
+    gap: 60px;
     margin-right: 60px;
     margin-bottom: 0px !important;
 }
 
 #r-cont-item li a {
     transition: all 0.2s;
-    padding: 0px 0px 6px 0px;
+    padding: 0px 5px 6px 5px;
 }
 
 
-#r-cont-item li a:hover {
+#r-cont-item li a:hover,
+.active {
     border-bottom: 2.5px solid white;
-
-
 }
 
 /* This is for ham-burger */
@@ -187,36 +239,46 @@ header {
 /* section 2 */
 
 #courses {
+    background-color: #eeede9;
     padding-top: 50px;
 }
 
 .courses {
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #fefefe;
+    /* background-color: #fefefe; */
 }
 
 .course-card {
     max-width: 300px;
     margin: 30px;
-    border: 2px solid red;
+    border: 1.4px solid black;
     border-radius: 10px;
     transition: all 0.8s;
     cursor: pointer;
     min-width: 275px;
+    box-shadow: 0px 0px 4px black;
 }
 
-.course-card:hover {
-    background-color: red;
-    color: white;
+
+
+.course-card .img {
+    height: 220px;
+    padding: 10px;
+}
+
+.course-card .img img {
+    border-radius: 9px;
 }
 
 .course-card .content {
-    padding: 30px;
+    padding: 60px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .course-card .content h3 {
@@ -266,4 +328,35 @@ header {
     place-items: center;
     padding: 30px 0px;
     margin-top: auto;
+}
+
+.foot hr {
+    width: 31%;
+    height: 2px;
+    color: white;
+    min-width: 300px;
+}
+
+.icons {
+    display: flex;
+    column-gap: 20px;
+}
+
+.icons i {
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.icons i:first-child:hover {
+    color: #1c93e4;
+}
+
+.icons i:nth-child(2):hover {
+    color: #0a66c2;
+}
+
+
+.icons i:last-child:hover {
+    color: #1298f6;
 }
